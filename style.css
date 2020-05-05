@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+:root{
+    --rich-black: #0d1b2a;
+    --bdazzled-blue: #415A77;
+    --shadow-blue: #778DA9;
+    --platinum: #d5d6d1;
+    --oxford-blue: #fdfffc;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: 'Concert One', cursive;
+    background-color: var(--oxford-blue);
+    
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backgorund{
+    width: 350px;
+    height: 560px;
+    background-color: var(--bdazzled-blue);
+}
+.display{
+    height: 130px;
+    background-color: var(--rich-black);
+    overflow: hidden;
+}
+.display>div{
+    color: #fff;
+    text-align: right;
+    padding: 0 10px;
+}
+.result{
+    height: 40%;
+    font-size: 1.5rem;
+    line-height: 52px;
+}
+.operations{
+    height: 60%;
+    font-size: 2rem;
+    line-height: 78px;
+}
+.calculator-keys{
+    margin: 20px;
+    
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 70px);
+    justify-content: center;
+    gap: 10px;
+}
+[class^="key"]{
+    color: var(--oxford-blue);
+    background-color: var(--platinum);
+    font-size: 2rem;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[class^="keyOp"]{
+    background-color: var(--shadow-blue);
+}
+.keyOpSum{
+    grid-row: span 2;
+}
+.keyOpEq{
+    grid-row: span 2;
+}
+.key0{
+    grid-column: span 2;
+}
