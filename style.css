@@ -24,28 +24,21 @@ body{
 }
 .backgorund{
     width: 350px;
-    height: 560px;
+    height: 540px;
     background-color: var(--bdazzled-blue);
 }
 .display{
-    height: 130px;
+    height: 100px;
     background-color: var(--rich-black);
     overflow: hidden;
 }
-.display>div{
+.operations{
     color: #fff;
     text-align: right;
-    padding: 0 10px;
-}
-.result{
-    height: 40%;
-    font-size: 1.5rem;
-    line-height: 52px;
-}
-.operations{
-    height: 60%;
-    font-size: 2rem;
-    line-height: 78px;
+    padding: 0 20px;
+    height: 100%;
+    font-size: 3rem;
+    line-height: 100px;
 }
 .calculator-keys{
     margin: 20px;
@@ -61,6 +54,7 @@ body{
     color: var(--oxford-blue);
     background-color: var(--platinum);
     font-size: 2rem;
+    cursor: pointer;
 
     /* Flexbox */
     display: flex;
