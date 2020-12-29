@@ -2,8 +2,6 @@
 
 Simple calculator using html, css and javascript
 
-Deployed to github-pages: https://luisfelipel.github.io/Simple-Calculator
-
 ## Image of developed calculator
 
 <p align="center">

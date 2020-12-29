@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
-</head>
-<body>
-    <div class="backgorund">
-      <div class="display">
-        <div class="operations">0</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator__display">
+        <div class="calculator__ans">Ans= <span id="ans">0</span></div>
+        <div class="calculator__operations">
+          <span id="display">0</span>
+        </div>
       </div>
-      <div class="calculator-keys">
-          <div class="keyOpDelete">Del</i></div>
-          <div class="keyOpDiv Op">/</div>
-          <div class="keyOpMul Op">x</div>
-          <div class="keyOpSub Op">-</div>
-
-          <div class="key7">7</div>
-          <div class="key8">8</div>
-          <div class="key9">9</div>
-          <div class="keyOpSum Op">+</div>
-          
-          <div class="key4">4</div>
-          <div class="key5">5</div>
-          <div class="key6">6</div>
-
-          <div class="key1">1</div>
-          <div class="key2">2</div>
-          <div class="key3">3</div>
-          <div class="keyOpEq">=</div>
-          
-          <div class="key0">0</div>
-          <div class="keyOpDot">.</div>
-      </div>
+      <div id="calculatorContainer"></div>
     </div>
-
-    <script src="script.js"></script>
-</body>
+    <script src="src/js/app.js"></script>
+  </body>
 </html>
